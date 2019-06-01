@@ -13,5 +13,14 @@ public class TemperatureModel {
 
     private Integer pressure;
 
+    public Double getTemperatureInCelsius(){
+        return temperature - 273.15;
+    }
+
+    public String getTemperatureDescription(){
+        return String.format("%.2f",
+                getTemperatureInCelsius());
+    }
+
 
 }

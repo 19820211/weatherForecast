@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--
+weather.getBase() to dla Themyleafa to samo co: weather.base
+-->
+<h1>Temperatura to:</h1>
+
+<!--weather.gettemperatureModel().getTemperature() -->
+<p th:text="${weather.temperatureModel.getTemperatureDescription()}"/>
+
+<h3>Cisnienie to:</h3>
+
+<p th:text="${weather.temperatureModel.pressure}"/>
+
+<a href="/">Cofnij</a>
+
+</body>
+</html>
